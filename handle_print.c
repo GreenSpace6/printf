@@ -9,6 +9,7 @@
  * @width: Get width.
  * @precision: precision specification.
  * @size: size specifier
+ * Everything looks good bro!
  * Return: 1 or 2;
  */
 int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
