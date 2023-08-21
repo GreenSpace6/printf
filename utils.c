@@ -2,8 +2,8 @@
 
 /**
  * is_printable - evaluates if a char is printable
- * @c: char to be evaluated.
- *
+ * Johnson and Nomore
+ * @c: char to be evaluated
  * Return: 1 if c is printable, 0 otherwise
  */
 int is_printable(char c)
@@ -40,7 +40,6 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
 /**
  * is_digit - Verifies if a char is a digit
  * @c: Char to be evaluated
- *
  * Return: 1 if c is a digit, 0 otherwise
  */
 int is_digit(char c)
@@ -55,7 +54,6 @@ int is_digit(char c)
  * convert_size_number - casts a number to the specified size
  * @num: number to be casted.
  * @size: number indicating the type to be casted.
- *
  * Return: casted value of num
  */
 long int convert_size_number(long int num, int size)
@@ -72,7 +70,6 @@ long int convert_size_number(long int num, int size)
  * convert_size_unsgnd - casts a number to the specified size
  * @num: number to be casted
  * @size: number indicating the type to be casted
- *
  * Return: casted value of num
  */
 long int convert_size_unsgnd(unsigned long int num, int size)
