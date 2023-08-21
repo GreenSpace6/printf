@@ -1,6 +1,6 @@
 #include "main.h"
 
-/************************* PRINT CHAR *************************/
+/*** PRINT CHAR ***/
 
 /**
  * print_char - Prints a char
@@ -10,6 +10,7 @@
  * @width: width.
  * @precision: precision specification.
  * @size: size specifier.
+ * good work, lets see how this goes brother
  * Return: number of chars printed.
  */
 int print_char(va_list types, char buffer[],
@@ -19,7 +20,7 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
-/************************* PRINT A STRING *************************/
+/***** PRINT A STRING ******/
 /**
  * print_string - prints a string
  * @types: list a of arguments.
@@ -74,7 +75,7 @@ int print_string(va_list types, char buffer[],
 
 	return (write(1, str, length));
 }
-/************************* PRINT PERCENT SIGN *************************/
+/*** PRINT PERCENT SIGN *******/
 /**
  * print_percent - prints a percent sign.
  * @types: list a of arguments.
@@ -97,7 +98,7 @@ int print_percent(va_list types, char buffer[],
 	return (write(1, "%%", 1));
 }
 
-/************************* PRINT INT *************************/
+/**** PRINT INT *******/
 /**
  * print_int - Print int
  * @types: list a of arguments.
@@ -141,7 +142,7 @@ int print_int(va_list types, char buffer[],
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 
-/************************* PRINT BINARY *************************/
+/**** PRINT BINARY ***/
 /**
  * print_binary - prints an unsigned number.
  * @types: list a of arguments.
