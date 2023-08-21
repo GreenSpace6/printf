@@ -1,6 +1,6 @@
 #include "main.h"
 
-/************************* WRITE HANDLE *************************/
+/**** WRITE HANDLE ****/
 /**
  * handle_write_char - Prints a string
  * @c: char types.
@@ -9,7 +9,6 @@
  * @width: get width.
  * @precision: precision specifier.
  * @size: size specifier.
- *
  * Return: Number of chars printed.
  */
 int handle_write_char(char c, char buffer[],
@@ -44,7 +43,7 @@ int handle_write_char(char c, char buffer[],
 	return (write(1, &buffer[0], 1));
 }
 
-/************************* WRITE NUMBER *************************/
+/***** WRITE NUMBER ****/
 /**
  * write_number - prints a string
  * @is_negative: list a of arguments
@@ -54,7 +53,6 @@ int handle_write_char(char c, char buffer[],
  * @width: Get width.
  * @precision: precision specifier.
  * @size: size specifier.
- *
  * Return: number of chars printed.
  */
 int write_number(int is_negative, int ind, char buffer[],
@@ -88,7 +86,6 @@ int write_number(int is_negative, int ind, char buffer[],
  * @length: number length.
  * @padd: Pading char.
  * @extra_c: extra char.
- *
  * Return: Number of printed chars.
  */
 int write_num(int ind, char buffer[],
@@ -146,7 +143,6 @@ int write_num(int ind, char buffer[],
  * @width: width specifier.
  * @precision: precision specifier.
  * @size: size specifier.
- *
  * Return: Number of written chars.
  */
 int write_unsgnd(int is_negative, int ind,
@@ -205,7 +201,6 @@ int write_unsgnd(int is_negative, int ind,
  * @padd: char representing the padding.
  * @extra_c: char representing extra char.
  * @padd_start: index at which padding should start.
- *
  * Return: Number of written chars.
  */
 int write_pointer(char buffer[], int ind, int length,
